@@ -1,0 +1,146 @@
+{
+  "author": {
+    "email": "timothy.l.jones@gmail.com",
+    "name": "Timothy Jones",
+    "roles": [
+      "author"
+    ],
+    "url": "https://github.com/TimothyJones"
+  },
+  "description": "Example JSii module for the async issue",
+  "docs": {
+    "stability": "stable"
+  },
+  "homepage": "git+ssh://git@github.com/case-contract-testing/case.git",
+  "jsiiVersion": "5.1.1 (build 1f91050)",
+  "license": "BSD-3-Clause",
+  "metadata": {
+    "jsii": {
+      "pacmak": {
+        "hasDefaultInterfaces": true
+      }
+    },
+    "tscRootDir": "src"
+  },
+  "name": "jsii-module",
+  "readme": {
+    "markdown": "# Async example\n\nThis is an example to reproduce a bug crossing aync boundaries in JSii\n"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/case-contract-testing/case.git"
+  },
+  "schema": "jsii/0.10.0",
+  "targets": {
+    "dotnet": {
+      "namespace": "ContractCase.TestEquivalenceMatchers",
+      "packageId": "ContractCase.TestEquivalenceMatchers"
+    },
+    "java": {
+      "maven": {
+        "artifactId": "jsii-async-issue",
+        "groupId": "io.contract-testing.contractcase"
+      },
+      "package": "io.contract_testing.contractcase.test.jsii_async_issue"
+    },
+    "js": {
+      "npm": "jsii-module"
+    },
+    "python": {
+      "distName": "contractcase.contractcase.testequivalencematchers",
+      "module": "contractcase.contractcase.testequivalencematchers"
+    }
+  },
+  "types": {
+    "jsii-module.Example": {
+      "assembly": "jsii-module",
+      "docs": {
+        "stability": "stable"
+      },
+      "fqn": "jsii-module.Example",
+      "initializer": {
+        "docs": {
+          "stability": "stable"
+        },
+        "locationInModule": {
+          "filename": "src/index.ts",
+          "line": 14
+        }
+      },
+      "kind": "class",
+      "locationInModule": {
+        "filename": "src/index.ts",
+        "line": 11
+      },
+      "methods": [
+        {
+          "async": true,
+          "docs": {
+            "stability": "stable"
+          },
+          "locationInModule": {
+            "filename": "src/index.ts",
+            "line": 25
+          },
+          "name": "callTrigger",
+          "parameters": [
+            {
+              "name": "trigger",
+              "type": {
+                "fqn": "jsii-module.ITriggerFunction"
+              }
+            }
+          ]
+        },
+        {
+          "async": true,
+          "docs": {
+            "stability": "stable"
+          },
+          "locationInModule": {
+            "filename": "src/index.ts",
+            "line": 16
+          },
+          "name": "longRunningSomething"
+        }
+      ],
+      "name": "Example",
+      "symbolId": "src/index:Example"
+    },
+    "jsii-module.ITriggerFunction": {
+      "assembly": "jsii-module",
+      "docs": {
+        "stability": "stable"
+      },
+      "fqn": "jsii-module.ITriggerFunction",
+      "kind": "interface",
+      "locationInModule": {
+        "filename": "src/index.ts",
+        "line": 1
+      },
+      "methods": [
+        {
+          "abstract": true,
+          "async": true,
+          "docs": {
+            "stability": "stable"
+          },
+          "locationInModule": {
+            "filename": "src/index.ts",
+            "line": 2
+          },
+          "name": "trigger",
+          "returns": {
+            "type": {
+              "primitive": "string"
+            }
+          }
+        }
+      ],
+      "name": "ITriggerFunction",
+      "symbolId": "src/index:ITriggerFunction"
+    }
+  },
+  "version": "1.0.0",
+  "fingerprint": "XpEY/WAasCj340S4tRwwjXX9UvUGshGAp0psH6TAWZ0="
+}
