@@ -1,5 +1,6 @@
 plugins {
-    id 'java-library'
+    id 'java'
+    id "application"
 }
 
 group 'org.example'
@@ -8,6 +9,10 @@ version '1.0-SNAPSHOT'
 repositories {
     mavenCentral()
 }
+application {
+    mainClassName = 'org.example.Main'
+}
+
 
 dependencies {
     implementation fileTree(dir: './libs', include: ['*.jar'])
