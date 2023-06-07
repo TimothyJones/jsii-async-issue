@@ -9,9 +9,10 @@ public class Main {
     var foo = new Example();
     System.out.println("Java-host: Calling example.longRunningSomething()");
     foo.longRunningSomething();
-    System.out.println("Java-host: Waiting for 5 seconds");
+    System.out.println("Java-host: Waiting for 5 seconds (the ticks should keep printing while this is happening, but they don't)");
     Thread.sleep( 5000);
     System.out.println("Java-host: Calling example.longRunningSomething() again");
     foo.longRunningSomething();
+    System.out.println("Java-host: Note that both sets (1) and (2) of ticks restarted once the JS was called - because node was blocked until it was called from Java");
   }
 }
